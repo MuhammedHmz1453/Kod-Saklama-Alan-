@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KARACA Ahşap Atölyesi — El Yapımı Tasarımlar</title>
+  <meta name="description" content="KARACA'nın el yapımı ahşap mobilya ve özel tasarım atölyesi. Masa, raf, dekorasyon ve özel siparişler.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --card:#0f0f10;
+      --muted:#bdbdbd;
+      --accent:#d4a373; /* ahşap-turuncu tonu */
+      --glass: rgba(255,255,255,0.03);
+      --radius:18px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg), #060606);
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:24px;
+    }
+    .container{max-width:1100px;margin:0 auto}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:52px;height:52px;background:linear-gradient(135deg,var(--accent),#8b5a2b);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#0b0b0b}
+    nav{display:flex;gap:18px}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .cta{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:12px;color:var(--muted);font-weight:700}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:36px}
+    .hero h1{font-size:40px;margin:0 0 14px 0;line-height:1.05}
+    .hero p{color:var(--muted);margin:0 0 18px 0}
+    .buttons{display:flex;gap:12px}
+    .btn{padding:12px 16px;border-radius:12px;border:none;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--accent);color:#080808}
+    .btn-ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.05)}
+
+    /* Card */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,0.6);}
+
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
+    .feature h3{margin:8px 0 6px 0}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:12px}
+
+    /* Contact */
+    .contact{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:28px}
+    form label{display:block;font-size:13px;margin-bottom:8px;color:var(--muted)}
+    input,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff}
+    textarea{min-height:140px;resize:vertical}
+
+    footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .contact{grid-template-columns:1fr}
+      nav{display:none}
+    }
+    @media (max-width:520px){
+      .gallery img{height:120px}
+      .hero h1{font-size:30px}
+    }
+
+    /* small utilities */
+    .small{font-size:13px;color:var(--muted)}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark"></div>
+        <div>
+          <div style="font-weight:800">KARACA Ahşap Atölyesi</div>
+          <div class="small">El yapımı mobilya & özel tasarım</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#iletisim">İletişim</a>
+        <a class="cta" href="#teklif">Teklif Al</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Doğal ahşap, zamansız tasarımlar — özel olarak sana.
+        </h1>
+        <p>Atölyemizde sürdürülebilir malzemelerle, el işçiliğiyle üretilen masalar, raflar ve dekoratif ürünler tasarlıyoruz. Özel ölçü ve isteklerin için teklif al.</p>
+        <div class="buttons">
+          <button class="btn btn-primary" onclick="document.getElementById('teklif').scrollIntoView({behavior:'smooth'})">Teklif Al</button>
+          <button class="btn btn-ghost" onclick="document.getElementById('galeri').scrollIntoView({behavior:'smooth'})">Galeriye Bak</button>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+          <span class="chip">El yapımı</span>
+          <span class="chip">Sürdürülebilir</span>
+          <span class="chip">Özel Ölçü</span>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Hızlı Bilgiler</h3>
+          <p class="muted">Sipariş süresi: 2-6 hafta (tasarıma göre değişir)</p>
+          <p class="muted">Kargo ve montaj seçenekleri mevcut</p>
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0">
+          <p style="margin:0"><strong>İletişim:</strong><br> +90 535 255 77 18<br>muhammedhmz2014@gmail.com</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="hizmetler">
+      <h2 style="margin-bottom:10px">Hizmetlerimiz</h2>
+      <div class="features">
+        <div class="card feature">
+          <div style="font-size:20px">🪵</div>
+          <h3>Özel Mobilya</h3>
+          <p class="muted">Mutfak masası, çalışma masası, TV ünitesi gibi ölçüye özel üretimler.</p>
+        </div>
+        <div class="card feature">
+          <div style="font-size:20px">🧰</div>
+          <h3>Tadilat & Montaj</h3>
+          <p class="muted">Yerinde montaj ve yüzey işlemleri. Montaj ekibiyle destek sağlanır.</p>
+        </div>
+        <div class="card feature">
+          <div style="font-size:20px">🎁</div>
+          <h3>Küçük Ürünler & Hediyelik</h3>
+          <p class="muted">Kesme tahtası, raf, mumluk gibi küçük ancak özenli ürünler.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeri">
+      <h2 style="margin-bottom:10px">Galeri</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=800&q=60" alt="ahsap-1">
+        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=60" alt="ahsap-2">
+        <img src="https://images.unsplash.com/photo-1536611413-3b6e5b2b3b0d?auto=format&fit=crop&w=800&q=60" alt="ahsap-3">
+        <img src="https://images.unsplash.com/photo-1505691723518-36aee4a3bba2?auto=format&fit=crop&w=800&q=60" alt="ahsap-4">
+        <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=800&q=60" alt="ahsap-5">
+        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=60" alt="ahsap-6">
+      </div>
+    </section>
+
+    <section id="iletisim" class="contact">
+      <div>
+        <h2 id="teklif">Teklif İsteği</h2>
+        <p class="muted">Projene uygun bir teklif alabilmemiz için aşağıdaki formu doldur. Ben (Hamza) geri dönüş yapacağım.</p>
+        <form onsubmit="event.preventDefault(); sendForm();">
+          <label>İsim</label>
+          <input id="name" required placeholder="Adın">
+
+          <label>E-posta veya Telefon</label>
+          <input id="contact" required placeholder="E-posta veya telefon">
+
+          <label>Proje Açıklaması</label>
+          <textarea id="desc" placeholder="Kısa açıklama (ölçüler, malzeme, teslim süresi vb.)"></textarea>
+
+          <div style="margin-top:12px;display:flex;gap:10px">
+            <button class="btn btn-primary" type="submit">Gönder</button>
+            <button class="btn btn-ghost" type="button" onclick="document.getElementById('desc').value=''">Temizle</button>
+          </div>
+        </form>
+        <p id="status" class="muted" style="margin-top:12px"></p>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Adres</h3>
+          <p class="muted">Atölye: Yalova (randevu ile ziyaret)</p>
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0">
+          <p class="muted">Sosyal: Instagram / E-posta / Telefon</p>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Hamza Ahşap Atölyesi — Tüm hakları saklıdır.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+    function sendForm(){
+      const name = document.getElementById('name').value.trim();
+      const contact = document.getElementById('contact').value.trim();
+      const desc = document.getElementById('desc').value.trim();
+      const status = document.getElementById('status');
+      if(!name || !contact){ status.innerText = 'Lütfen isim ve iletişim bilgilerinizi girin.'; return; }
+      // Bu örnek sitede gerçek sunucu yok. Gerçek e-posta veya API entegrasyonu eklenebilir.
+      status.innerText = 'Teşekkürler, isteğiniz alındı. En kısa sürede dönüş yapacağım.';
+      // Formu sıfırlamak isterseniz:
+      // document.querySelector('form').reset();
+    }
+  </script>
+</body>
+</html>
