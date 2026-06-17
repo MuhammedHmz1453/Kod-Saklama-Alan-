@@ -1,0 +1,126 @@
+h1 {
+    color: blue;
+    font-size: 36px;
+}
+
+p {
+    color: gray ;
+    font-size: 16px;
+}
+
+
+body{
+    background-color: #f5f5f5 ;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333333;
+}
+
+p{
+    color: #666666;
+    line-height: 1.6;
+}
+
+body{
+    background-color: #f0f0f0 ;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.kart{
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    color: #333;
+}
+
+p{
+    color: #666;
+}
+
+a{
+    color: purple;
+}
+
+body{
+    font-family: Arial, sans-serif; 
+    background: #f0f0f0;
+    padding: 40px;
+}
+
+.kapsayici{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.kart{
+    background: white; 
+    padding: 25px;
+    border-radius: 12px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h3{
+    color: purple;
+    margin-bottom: 8px;
+}
+
+p{
+    color: #666;
+    font-size: 14px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px, 30px;
+}
+
+.logo{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li{
+    color: white;
+    cursor: pointer;
+}
+
+.kapsayici{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
